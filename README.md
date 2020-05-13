@@ -15,6 +15,7 @@ We can see an example of a REST API call to an MV camera requesting Live Analyti
 
 This will return a JSON response detailing the objects detected
 
+```
 {
     "ts": "2020-03-25T17:12:46.611Z",
     "zones": {
@@ -25,10 +26,15 @@ This will return a JSON response detailing the objects detected
             "person": 1
         },
         "701234567890123458": {
-            "person": 0
+        "person": 0
         },
+        "0":{
+            "person":1
+        }
+    }
+}
 
-
+```
 
 Using a simple python program, it is possible to identify when the number of customers queuing is over the desired amount. This program can then request the camera to take a Snapshot (image) via the REST API POST call
 
@@ -41,17 +47,20 @@ Cisco Webex teams is an idea application that can reside on a variety of operati
 The information about checkout queues can then be published to these rooms along with a picture (if appropriate) of the queue. The information is only published if there is a queue over a certain number of people or if a certain waiting time times is superseded. This means that the Webex Teams rooms are not constantly filling with checkout queue information, only when necessary. 
 The store staff are also responding to these checkout queue alerts, by detailing what they have done to reduce the queues, thus giving a record of the queues and the actions taken.
 
+![](Images/WebexTeams-Queue-example.png)
+
 We are able to use the comprehensive REST APIs that are available for Webex Teams to achieve this from the same Python code we are running to identify the queue.
 
 The Python code creates a message with the details of the queue and includes the snapshot of the queue (if appropriate)
 
 The following diagram give an overview of the REST API calls and the overall flow of the solution.
 
- 
+ ![](Images/Queue%20Management%20API%20Flow.png)
 
 This is just one example in a retail setting of the power that the Meraki MV Camera analytics gives. There are many more use cases across many customers where we can apply the same principles to look at security, building occupancy, trespass and COVID-19 social distancing to name a few
 
-To find out more about the Meraki MV Cameras go here https://meraki.cisco.com/products/security-cameras
+To find out more about the Meraki MV Cameras go here 
+https://meraki.cisco.com/products/security-cameras
 
 
 To find out more about Meraki MV Object Detection go here
