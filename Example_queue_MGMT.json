@@ -1,0 +1,35 @@
+{
+  "config":
+    {
+      "X-Cisco-Meraki-API-Key": "123456789012345678901234567890"
+    },
+  "cameras": [
+    {
+      "camera_serial": "Q2DF-DGHE-SX5T",
+      "camera_name": "Checkout1",
+      "zone": "712345678901234561",
+      "network_id": "N_712345678901234560",
+      "queue_length": 5,
+      "queue_duration": 120,
+      "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNjRlNDVhZTAtYzQ2Yi0xMWU1LTlkZjktMGQ0MWUzNDIxOTcz"
+    },
+    {
+      "camera_serial": "Q2GV-S7PZ-FGBK",
+      "camera_name": "Checkout3",
+      "zone": "712345678901234567",
+      "network_id": "N_712345678901234560",
+      "queue_length": 5,
+      "queue_duration": 120,
+      "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNjRlNDVhZTAtYzQ2Yi0xMWU1LTlkZjktMGQ0MWUzNDIxOTcz"
+    },
+    {
+      "camera_serial": "Q2GV-7RSP-PB4E              ",
+      "camera_name": "Checkout5",
+      "zone": "0",
+      "network_id": "N_712345678901234560",
+      "queue_length": 3,
+      "queue_duration": 180,
+      "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNjRlNDVhZTAtYzQ2Yi0xMWU1LTlkZjktMGQ0MWUzNDIxOTcz"
+    }
+  ]
+}
