@@ -14,6 +14,14 @@ IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 or implied.
 """
 
+from __future__ import absolute_import, division, print_function
+
+__author__ = "Andrew Longyear <alongyea@cisco.com>"
+__contributors__ = [
+]
+__copyright__ = "Copyright (c) 2020 Cisco and/or its affiliates."
+__license__ = "Cisco Sample Code License, Version 1.1"
+
 
 from datetime import datetime
 from requests_toolbelt.multipart.encoder import MultipartEncoder
