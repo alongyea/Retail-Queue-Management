@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Python example script showing proper use of the Cisco Sample Code header.
+"""
 Copyright (c) {{current_year}} Cisco and/or its affiliates.
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.1 (the "License"). You may obtain a copy of the
@@ -19,7 +19,7 @@ from __future__ import absolute_import, division, print_function
 __author__ = "Andrew Longyear <alongyea@cisco.com>"
 __contributors__ = [
 ]
-__copyright__ = "Copyright (c) 2020 Cisco and/or its affiliates."
+__copyright__ = "Copyright (c) {{current_year}} Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 
 
